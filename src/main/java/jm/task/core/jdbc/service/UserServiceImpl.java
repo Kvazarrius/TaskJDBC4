@@ -10,9 +10,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     private static final UserDao one = new UserDaoJDBCImpl();
 
-    public void createUsersTable() {
-        one.createUsersTable();
-    }
+    public void createUsersTable() { one.createUsersTable(); }
 
     public void dropUsersTable() {
         one.dropUsersTable();
